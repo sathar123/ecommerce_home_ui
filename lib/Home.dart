@@ -17,19 +17,21 @@ class Home extends StatelessWidget {
        SliverAppBar(
          pinned: true,
          backgroundColor: Colors.white,
-        title: Container(height: 6.h,
+        title: Container(
+          height: 6.h,
+          decoration: BoxDecoration(
+          color: Colors.grey.withOpacity(.2),
+          borderRadius:  BorderRadius.circular(32),
+        ),
           child: TextField(
 
             decoration: InputDecoration(
-            fillColor: Colors.grey.withOpacity(0.1),
-              filled: true,
+
+            
               enabled: false,
               hintText: 'Search product',
               prefixIcon: Icon(Icons.search),
-              border: OutlineInputBorder(
-
-                borderRadius: BorderRadius.circular(15)
-              )
+              border: InputBorder.none
 
             ),
           ),
