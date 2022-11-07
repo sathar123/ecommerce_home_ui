@@ -24,13 +24,11 @@ class Home extends StatelessWidget {
           borderRadius:  BorderRadius.circular(32),
         ),
           child: TextField(
-
+cursorColor: Colors.black,
             decoration: InputDecoration(
 
-            
-              enabled: false,
               hintText: 'Search product',
-              prefixIcon: Icon(Icons.search),
+              prefixIcon: Icon(Icons.search,color: Colors.black,),
               border: InputBorder.none
 
             ),
