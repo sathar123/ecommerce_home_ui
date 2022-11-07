@@ -16,5 +16,5 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 Screenshots: 
 
-![ecommerce1](https://user-images.githubusercontent.com/56146545/200270219-b0fae69a-d42a-43a7-861e-d59f0386c202.png)
-![ecommerce2](https://user-images.githubusercontent.com/56146545/200270244-959906aa-7257-4fa1-a772-12ed93354eba.png)
+![ecommerce1](https://user-images.githubusercontent.com/56146545/200274507-18bce6bc-d326-4f18-8cbf-c97216accc12.png)
+![ecommerce2](https://user-images.githubusercontent.com/56146545/200274529-10c9607d-f830-498f-adc9-eab55498666e.png)
