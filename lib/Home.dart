@@ -9,6 +9,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        extendBody: true,
       backgroundColor: Colors.white,
      body: CustomScrollView(
        shrinkWrap: true,
@@ -274,22 +275,34 @@ class Home extends StatelessWidget {
      ],
 
      ),
-      bottomNavigationBar: ClipRRect(
+      bottomNavigationBar: Container(
+        clipBehavior: Clip.antiAliasWithSaveLayer,
+        decoration: BoxDecoration(
+    borderRadius: BorderRadius.only(
+    topRight: Radius.circular(30), topLeft: Radius.circular(30)),
+    boxShadow: [
+    BoxShadow(color: Colors.black38, spreadRadius: 0, blurRadius: 10),
+    ],),
+
+    child: ClipRRect(
+
      borderRadius: BorderRadius.only(topLeft: Radius.circular(40.0), topRight: Radius.circular(40.0), ),
     child: BottomNavigationBar(
-      currentIndex: 0,
-        selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
-        backgroundColor: Colors.white,
-        selectedItemColor: Colors.orange,
-        unselectedItemColor: Colors.grey,
-        items: [
-        BottomNavigationBarItem(icon: Icon(Icons.storefront_sharp,),label: '.',backgroundColor: Colors.white),
-        BottomNavigationBarItem(icon: Icon(Icons.favorite_border_rounded,),label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.comment),label: ''),
-        BottomNavigationBarItem(icon: Icon(Icons.people_alt_outlined),label: ''),
-      ],
+type: BottomNavigationBarType.fixed,
+        currentIndex: 0,
+          backgroundColor: Colors.white,
+          selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
+          selectedItemColor: Colors.orange,
+          unselectedItemColor: Colors.grey,
+          items: [
+          BottomNavigationBarItem(icon: Icon(Icons.storefront_sharp,),label: '.',),
+          BottomNavigationBarItem(icon: Icon(Icons.favorite_border_rounded,),label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.comment),label: ''),
+          BottomNavigationBarItem(icon: Icon(Icons.people_alt_outlined),label: ''),
+        ],
 
-      ),
+        ),
+        ),
       )
     );
   }
